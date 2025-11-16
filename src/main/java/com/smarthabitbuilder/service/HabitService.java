@@ -7,11 +7,11 @@ public interface HabitService {
 
     boolean addHabit(String name, String frequency, String category);
 
-    List<Habit> getAllHabits();
-
-    Habit getHabitById(int id);
+    boolean updateHabit(int id, String newName, String newFrequency, String newCategory);
 
     boolean deleteHabit(int id);
 
-    boolean updateHabit(int id, String newName, String newFrequency, String newCategory);
+    List<Habit> getAllHabits();
+
+    Habit getHabitById(int id);
 }

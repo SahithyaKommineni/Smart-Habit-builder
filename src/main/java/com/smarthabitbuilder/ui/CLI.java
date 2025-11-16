@@ -92,7 +92,7 @@ public class CLI {
         int id = scanner.nextInt();
         scanner.nextLine();
 
-        boolean status = habitLogService.markCompleted(id, LocalDate.now());
+        boolean status = habitLogService.markCompleted(id);
         System.out.println(status ? "Marked as completed!" : "Failed.");
     }
 

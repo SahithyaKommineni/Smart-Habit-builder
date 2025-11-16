@@ -1,9 +1,8 @@
 package com.smarthabitbuilder.dao;
 
-
 import com.smarthabitbuilder.model.Habit;
-import java.util.List;
 
+import java.util.List;
 
 public interface HabitDao {
     boolean addHabit(Habit habit);
